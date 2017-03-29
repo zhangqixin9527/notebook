@@ -11,5 +11,22 @@
 
     <artifactId>common-test</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.jdd.commons</groupId>
+            <artifactId>commons-utils</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jdd.commons</groupId>
+            <artifactId>commons-configure</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jdd.commons</groupId>
+            <artifactId>commons-sql</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
