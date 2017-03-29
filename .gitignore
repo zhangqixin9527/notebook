@@ -1,4 +1,9 @@
-# ignore .idea file
+# ignore .idea/* file
 .idea/*
 # ignore .iml file
 *.iml
+# ignore .idea file
+.idea/
+# ignore parent-utils/utils-common
+parent-utils/utils-common/src/test/
+parent-utils/utils-common/target/
