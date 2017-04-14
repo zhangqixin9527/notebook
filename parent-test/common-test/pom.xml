@@ -32,6 +32,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.39</version>
         </dependency>
+        <dependency>
+            <groupId>jdk.tools</groupId>
+            <artifactId>jdk.tools</artifactId>
+            <version>RELEASE</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -11,15 +11,33 @@
  */
 package com.hengba.test.common;
 
+import commons.utils.CharacterUtils;
+
+import java.util.List;
+
 /**
  * @author Kevin created on 2017/4/1.
  * @since framework 1.0
  */
 public class Test001 {
     public static void main(String[] args) {
+        testClassMethod();
+        testPrintWriter();
+    }
+
+    public static void testClassMethod() {
         Class<?> clazz = Test001.class;
         String classContainer = clazz.getProtectionDomain().getCodeSource()
                 .getLocation().toString();
         System.out.println("==>"+classContainer);
+    }
+
+    public static void testPrintWriter() {
+        List<String> list = null;
+        try{
+            list.add("test");
+        } catch (Throwable e){
+            CharacterUtils.printStackTrace(e);
+        }
     }
 }

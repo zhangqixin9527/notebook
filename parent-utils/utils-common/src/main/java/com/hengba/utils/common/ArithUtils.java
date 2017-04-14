@@ -89,9 +89,22 @@ public class ArithUtils {
         return percent((double)v1, (double)v2, scale);
     }
 
+
+    /**
+     * 字符串对应数值设置精度 (取舍：四舍五入)
+     * @param value 字符串对象
+     * @param length 精度(小数点后)
+     * @return 拥有制定精度的字符串
+     */
+    public static String stringScale(String value, int length){
+        Double valueB = new Double(value);
+        return new BigDecimal(valueB).setScale(length, BigDecimal.ROUND_HALF_UP).toString();
+    }
+
     public static void main(String[] args) {
         System.out.println(divide(1,3,4));
         System.out.println(1.3*2.0);
         System.out.println(percent(2.2,1,1));
+        System.out.println(stringScale("1.00", 3));
     }
 }
