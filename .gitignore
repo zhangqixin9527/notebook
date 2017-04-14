@@ -9,13 +9,13 @@
 parent-utils/utils-common/target/
 #parent-test/common-test/src/main/java/com/hengba/test/common/hive/
 #parent-test/common-test/src/test/
-parent-test/common-test/target/*
+parent-test/common-test/target/
 #parent-test/common-test/target/classes/com/hengba/test/common/annotation/
 #parent-test/common-test/target/classes/com/hengba/test/common/inherit/
 #parent-test/common-test/target/classes/com/hengba/test/common/reflect/
 #parent-test/common-test/target/generated-sources/
 #parent-test/hive-test/src/main/resources/
 #parent-test/hive-test/src/test/
-parent-test/hive-test/target/*
+parent-test/hive-test/target/
 #parent-test/hive-test/target/generated-sources/
 #parent-utils/utils-common/src/main/resources/
