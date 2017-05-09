@@ -1,0 +1,10 @@
+<configuration>
+    <property>
+        <name>warehouse.url</name>
+        <value>jdbc:warehouse://localhost:5188/hive</value>
+    </property>
+    <property>
+        <name>engine.selector.id</name>
+        <value>phoenix</value>
+    </property>
+</configuration>
