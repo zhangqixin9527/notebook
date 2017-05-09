@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<configuration>
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>192.168.137.87:2181,192.168.137.89:2181,192.168.137.90:2181</value>
+    </property>
+</configuration>
