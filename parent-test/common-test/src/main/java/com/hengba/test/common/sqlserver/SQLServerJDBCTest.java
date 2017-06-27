@@ -11,13 +11,17 @@
  */
 package com.hengba.test.common.sqlserver;
 
+
 /**
  * @author Kevin created on 2017/5/3.
  * @since framework 1.0
  */
 public class SQLServerJDBCTest {
     public static void main(String[] args) throws ClassNotFoundException {
-        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-
+//        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        int a = 12;
+        int b = 11;
+        int c = 25;
+        System.out.println(a / (a+b+c));
     }
 }

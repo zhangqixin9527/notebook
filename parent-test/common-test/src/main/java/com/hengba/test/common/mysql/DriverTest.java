@@ -22,8 +22,21 @@ public class DriverTest {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mytest001","root","root");
+//            DatabaseMetaData databaseMetaData = connection.getMetaData();
+//            ResultSet resultSet = databaseMetaData.getTables(null, null, null, null);
+//            while (resultSet.next()){
+//                System.out.println("=="+resultSet.getString(1));
+//                System.out.println("=="+resultSet.getString(2));
+//            }
+//            ResultSet resultSet1 = databaseMetaData.getColumns(null, null, null, null);
+//            while (resultSet1.next()){
+//                System.out.println("=="+resultSet1.getString(1));
+//                System.out.println("=="+resultSet1.getString(2));
+//            }
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("select t.uid as a,t.name as b,t.phone as c from testuser t");
+            com.mysql.jdbc.ResultSetMetaData resultSetMetaData = (com.mysql.jdbc.ResultSetMetaData)rs.getMetaData();
+            System.out.printf(""+resultSetMetaData);
             while(rs.next()){
 //                System.out.println("uid: "+rs.getInt("uid"));
 //                System.out.println("name: "+rs.getString("name"));

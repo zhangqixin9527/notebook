@@ -11,6 +11,7 @@
  */
 package com.hengba.utils.common.test;
 
+import com.hengba.utils.common.ArithUtils;
 import com.hengba.utils.common.ReflectUtils;
 import org.junit.Test;
 
@@ -31,5 +32,10 @@ public class Test001 {
         ReflectUtils.getAnnotationFields(Bean.class, TableColumnAnnotation.class).forEach(a -> {
             System.out.println("==name: "+a.getName()+", type: "+a.getType());
         });
+    }
+
+    @Test
+    public void arith(){
+        System.out.println(ArithUtils.divide(12, 24, 2));
     }
 }

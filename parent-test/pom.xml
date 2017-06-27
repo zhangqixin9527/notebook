@@ -11,7 +11,21 @@
     <modules>
         <module>common-test</module>
         <module>hive-test</module>
+        <module>zookeeper-test</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.7</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
