@@ -12,7 +12,7 @@
         <module>common-test</module>
         <module>hive-test</module>
         <module>zookeeper-test</module>
-        <module>transaction-test</module>
+        <module>translation-test</module>
         <module>elasticsearch-test</module>
     </modules>
 
