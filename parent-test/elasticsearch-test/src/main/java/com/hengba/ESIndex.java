@@ -29,7 +29,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
  * @author Kevin created on 2017/7/21.
  * @since framework 1.0
  */
-public class Main {
+public class ESIndex {
     public static void main(String[] args) {
         Settings settings = Settings.builder()
                 .put("client.transport.sniff", true).build();
