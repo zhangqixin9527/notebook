@@ -42,7 +42,6 @@ public class ESIndex {
             System.out.println("_type: "+response.getType());
             System.out.println("_id: "+response.getId());
             System.out.println("_version: "+response.getVersion());
-//            System.out.println("_source: "+response.);
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
