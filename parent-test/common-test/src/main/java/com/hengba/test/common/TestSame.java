@@ -15,17 +15,34 @@ import commons.utils.NetUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.UUID;
 
 /**
  * @author Kevin created on 2017/5/19.
  * @since framework 1.0
  */
 public class TestSame {
+    private String aaa;
     public static void main(String[] args) {
-        String[] ips = NetUtils.getLocalIpS();
-        for (String ip : ips) {
-            System.out.println("==> " + ip);
-        }
-        System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date(1497515017251L)));
+//        String[] ips = NetUtils.getLocalIpS();
+//        for (String ip : ips) {
+//            System.out.println("==> " + ip);
+//        }
+//        System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date(1497515017251L)));
+//        try {
+//            new TestSame().isEqual("a");
+//        }catch (Throwable t){
+//            t.printStackTrace();
+//        }
+        System.out.println(UUID.randomUUID());
+    }
+
+    public String getAaa() {
+        return aaa;
+    }
+
+    public boolean isEqual(String str){
+        aaa.equals("a");
+        return true;
     }
 }

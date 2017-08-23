@@ -16,6 +16,7 @@
         <module>elasticsearch-test</module>
         <module>kafka-test</module>
         <module>configuration-test</module>
+        <module>schema-test</module>
     </modules>
 
     <properties>

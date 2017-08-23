@@ -62,5 +62,22 @@ public class AdminUtilsService {
         for(String a : aa){
             System.out.println(a);
         }
+//        map.foreach(new Function1<Tuple2<String,Properties>, Object>() {
+//            @Override
+//            public <A> Function1<A, Object> compose(Function1<A, Tuple2<String, Properties>> g) {
+//                return null;
+//            }
+//
+//            @Override
+//            public Object apply(Tuple2<String, Properties> v1) {
+//                System.out.println("key: "+v1._1()+" , value: "+v1._2().getProperty(v1._1()));
+//                return null;
+//            }
+//
+//            @Override
+//            public <A> Function1<Tuple2<String, Properties>, A> andThen(Function1<Object, A> g) {
+//                return null;
+//            }
+//        });
     }
 }

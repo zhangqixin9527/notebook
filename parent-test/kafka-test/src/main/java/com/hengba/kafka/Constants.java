@@ -24,7 +24,7 @@ public class Constants {
     public static final String GROUP_ID = "group1";
 //    public static final String TOPIC = "WoLong";
 //    public static final String ZOOKEEPER_URL = "10.33.97.191:2181";
-    public static final String TOPIC = "test01";
+    public static final String TOPIC = "OddsCenter_test001";
     public static final String ZOOKEEPER_URL = "192.168.137.87:2181,192.168.137.89:2181,192.168.137.90:2181/kafka";
     public static final int ZOOKEEPER_SESSION_TIMEOUT = 30000;
     public static final int ZOOKEEPER_CONNECTION_TIMEOUT = 30000;
