@@ -144,7 +144,7 @@ public class ESUtils {
     }
 
     public static void main(String[] args) throws IOException {
-        ESUtils.createIndex("java_client_index", "java", "1", "{\"name\":\"zqx\"}");
+        ESUtils.createIndex("java_client_index001", "java", "1", "{\"name\":\"zqx\"}");
 
         Map<String, Object> map = new HashMap<>();
         map.put("name", "qly");

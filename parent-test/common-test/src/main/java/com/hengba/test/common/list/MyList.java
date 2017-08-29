@@ -35,5 +35,18 @@ public class MyList {
         list001.forEach(a -> System.out.println(a));
         System.out.println("===========================");
         list001.stream().forEachOrdered(a -> System.out.println(a));
+
+        List<Integer> list002 = new ArrayList<>();
+        list002.sort((a1, a2) -> a1 - a2);
+        System.out.println(list002);
+        list002.add(1);
+        list002.sort((a1, a2) -> a1 - a2);
+        System.out.println(list002);
+        list002.add(3);
+        list002.add(2);
+        list002.sort((a1, a2) -> a1 - a2);
+        System.out.println(list002);
+
+        System.out.println(String.format("Batch matchId:%1$s write to mongo, use time: %2$d", "12138", (System.currentTimeMillis() - 0L)));
     }
 }

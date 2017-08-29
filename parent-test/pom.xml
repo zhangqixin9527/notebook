@@ -17,6 +17,7 @@
         <module>kafka-test</module>
         <module>configuration-test</module>
         <module>schema-test</module>
+        <module>comparator</module>
     </modules>
 
     <properties>

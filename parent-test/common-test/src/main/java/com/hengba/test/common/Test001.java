@@ -13,6 +13,8 @@ package com.hengba.test.common;
 
 import commons.utils.CharacterUtils;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -21,8 +23,17 @@ import java.util.List;
  */
 public class Test001 {
     public static void main(String[] args) {
-        testClassMethod();
-        testPrintWriter();
+//        testClassMethod();
+//        testPrintWriter();
+        System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date(1503302695860L)));
+        System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date(1503389162027L)));
+
+        System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date(1503905109418L)));
+
+        System.out.println(System.currentTimeMillis());
+        System.out.println(System.currentTimeMillis());
+        System.out.println(System.currentTimeMillis());
+
     }
 
     public static void testClassMethod() {
