@@ -1,10 +1,12 @@
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\inherit\Abstract.java
+E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\staticC\A.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\map\MapDoSomething.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\interfaces\Watcher.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\TypeDistinguish.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\BarWorker2.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\annotation\FieldType.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\ShiftingTest.java
+E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\set\SetCommon.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\url\UrlTest.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\list\MyList.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\annotation\B.java
@@ -14,6 +16,7 @@ E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\mysql\DriverTest.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\annotation\TableColumnAnnotation.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\HiveMapHBaseService.java
+E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\staticC\ATest.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\annotation\TestMain.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\reflect\Appliance.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\reflect\ReflectMain.java
@@ -22,6 +25,7 @@ E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\sqlserver\SQLServerJDBCTest.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\ByteIOTest.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\interfaces\Mini.java
+E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\reflect\Clazz.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\configuartion\Commons.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\inherit\Iface.java
 E:\svn\zqx\notebook\parent-test\common-test\src\main\java\com\hengba\test\common\functional\User.java
