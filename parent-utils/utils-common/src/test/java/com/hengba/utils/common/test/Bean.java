@@ -34,4 +34,44 @@ public class Bean {
     private String who;
     private String operation;
     private int count;
+
+    public Bean setId(String id) {
+        this.id = id;
+        return this;
+    }
+
+    public Bean setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public Bean setAge(int age) {
+        this.age = age;
+        return this;
+    }
+
+    public Bean setSex(boolean sex) {
+        this.sex = sex;
+        return this;
+    }
+
+    public Bean setMoney(float money) {
+        this.money = money;
+        return this;
+    }
+
+    public Bean setWho(String who) {
+        this.who = who;
+        return this;
+    }
+
+    public Bean setOperation(String operation) {
+        this.operation = operation;
+        return this;
+    }
+
+    public Bean setCount(int count) {
+        this.count = count;
+        return this;
+    }
 }

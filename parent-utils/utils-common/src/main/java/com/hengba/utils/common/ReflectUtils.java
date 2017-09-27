@@ -11,11 +11,11 @@
  */
 package com.hengba.utils.common;
 
+import org.apache.commons.lang3.reflect.FieldUtils;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author Kevin created on 2017/4/14.
@@ -54,6 +54,32 @@ public class ReflectUtils {
                 }
             }
         });
+        return result;
+    }
+
+    /**
+     * 获取某X类型某个对象，被注释过的成员变量的名字-值映射Map
+     * 1. clazz类型
+     * 2. annotation注释类型
+     * 3. clazz类型的对象 target
+     * 4. 返回 Map
+     *
+     * @param clazz      指定类
+     * @param annotation 注释类
+     * @param target     目标对象
+     * @return 名字(类成员变量名)、值 映射map
+     */
+    public static Map<String, Object> getAnnotationNameValueMap(Class<?> clazz, Class<? extends Annotation> annotation, Object target) {
+        Map<String, Object> result = new HashMap<>();
+        getAnnotationFields(clazz, annotation).forEach(a ->
+            result.computeIfAbsent(a.getName(), b -> {
+                try {
+                    return FieldUtils.readField(a, target, true);
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }));
         return result;
     }
 }

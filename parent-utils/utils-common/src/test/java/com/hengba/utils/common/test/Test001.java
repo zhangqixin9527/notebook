@@ -21,21 +21,30 @@ import org.junit.Test;
  */
 public class Test001 {
     @Test
-    public void getAllDeclaredFieldsTest(){
+    public void getAllDeclaredFieldsTest() {
         ReflectUtils.getAllDeclaredFields(Icebox.class).forEach(a -> {
-            System.out.println("==name: "+a.getName()+" ,type "+a.getType());
+            System.out.println("==name: " + a.getName() + " ,type " + a.getType());
         });
     }
 
     @Test
-    public void getAnnotationFieldsTest(){
+    public void getAnnotationFieldsTest() {
         ReflectUtils.getAnnotationFields(Bean.class, TableColumnAnnotation.class).forEach(a -> {
-            System.out.println("==name: "+a.getName()+", type: "+a.getType());
+            System.out.println("==name: " + a.getName() + ", type: " + a.getType());
         });
     }
 
     @Test
-    public void arith(){
+    public void arith() {
         System.out.println(ArithUtils.divide(12, 24, 2));
+    }
+
+    @Test
+    public void getAnnotationNameValueMapTest() {
+        Bean bean = new Bean();
+        bean.setId("1").setName("zqx").setAge(29).setCount(100).setMoney(99.99f).setSex(true).setWho("xi").setOperation("duang");
+        ReflectUtils.getAnnotationNameValueMap(Bean.class, TableColumnAnnotation.class, bean).forEach((k, v) -> {
+            System.out.println(k + "-" + v);
+        });
     }
 }
