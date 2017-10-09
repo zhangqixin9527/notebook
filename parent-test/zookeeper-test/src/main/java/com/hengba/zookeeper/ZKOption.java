@@ -11,13 +11,12 @@
  */
 package com.hengba.zookeeper;
 
-import org.apache.zookeeper.KeeperException;
-import org.apache.zookeeper.WatchedEvent;
-import org.apache.zookeeper.Watcher;
-import org.apache.zookeeper.ZooKeeper;
+import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.Stat;
 
 import java.io.IOException;
+
+import static org.apache.zookeeper.CreateMode.*;
 
 /**
  * @author Kevin created on 2017/9/14.
@@ -25,8 +24,8 @@ import java.io.IOException;
  */
 public class ZKOption {
     public static void main(String[] args) {
-        String zk = args[0];
-        String znode = args[1];
+        String zk = "192.168.137.163:2181";
+        String znode = "/test";
         try {
             ZooKeeper zooKeeper = new ZooKeeper(zk, 3000, new Watcher() {
                 @Override
@@ -34,9 +33,10 @@ public class ZKOption {
                     System.out.println("我是操作里的Watch");
                 }
             });
+//            zooKeeper.create(znode, "xi".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE,  PERSISTENT);
             Stat stat = zooKeeper.exists(znode, false);
             System.out.println("version: " + stat.getVersion());
-            zooKeeper.setData(znode, "哈哈".getBytes(), stat.getVersion());
+            zooKeeper.setData(znode, "哈哈哈haha".getBytes(), stat.getVersion());
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {

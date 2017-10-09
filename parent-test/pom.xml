@@ -21,6 +21,7 @@
         <module>quartz-test</module>
         <module>arithmetic-test</module>
         <module>sql-test</module>
+        <module>rocketmq-test</module>
     </modules>
 
     <properties>
