@@ -22,4 +22,12 @@ public class A {
             System.out.println(i);
         }
     }
+
+    @Test
+    void test003(){
+        String a = "-96470.45";
+        String b = "-96470";
+        System.out.println(a.split("\\.")[0]);
+        System.out.println(b.split("\\.")[0]);
+    }
 }
