@@ -22,6 +22,7 @@
         <module>arithmetic-test</module>
         <module>sql-test</module>
         <module>rocketmq-test</module>
+        <module>mybatis-test</module>
     </modules>
 
     <properties>

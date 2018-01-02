@@ -7,7 +7,7 @@
  * 修改原因: 新增
  * 修改人员: Kevin
  * 修改日期: 2017/8/21
- * 修改内容: 
+ * 修改内容:
  */
 package com.hengba.test.common.list;
 
@@ -15,7 +15,9 @@ import commons.utils.DateUtils;
 import org.junit.jupiter.api.Test;
 
 import java.text.ParseException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -55,7 +57,7 @@ public class MyList {
     }
 
     @Test
-    void testSort(){
+    void testSort() {
         List<Integer> list001 = new ArrayList<>();
 
         list001.add(10);
@@ -81,7 +83,7 @@ public class MyList {
     }
 
     @Test
-    void testSortTime(){
+    void testSortTime() {
         List<String> list001 = new ArrayList<>();
 
         list001.add("2017-11-13 12:12:12");
@@ -108,11 +110,10 @@ public class MyList {
     }
 
     @Test
-    void testListPoints(){
+    void testListPoints() {
         List<Long> maxMids = new ArrayList<>();
         List<Long> currentMids = new ArrayList<>();
         List<Long> tempContinoustMids = new ArrayList<>();
-
         tempContinoustMids.add(1L);
         tempContinoustMids.add(2L);
         tempContinoustMids.add(3L);
@@ -121,7 +122,7 @@ public class MyList {
         maxMids = tempContinoustMids;
 
         System.out.println("===== temp =====");
-        tempContinoustMids.forEach(a-> System.out.println(a));
+        tempContinoustMids.forEach(a -> System.out.println(a));
         System.out.println("===== currentMids pointed =====");
         currentMids.forEach(a -> System.out.println(a));
         System.out.println("===== maxMids pointed =====");
@@ -134,6 +135,57 @@ public class MyList {
         System.out.println("===== now maxMids =====");
         maxMids.forEach(a -> System.out.println(a));
         System.out.println("===== temp =====");
-        tempContinoustMids.forEach(a-> System.out.println(a));
+        tempContinoustMids.forEach(a -> System.out.println(a));
+    }
+
+    @Test
+    void testPoint() {
+//        CopyOnWriteArrayList<String> list001 = new CopyOnWriteArrayList<>();
+        List<String> list001 = new ArrayList<>();
+        list001.add("2017-11-13");
+        list001.add("2017-11-11");
+        list001.add("2017-11-13");
+        list001.add("2017-11-13");
+        list001.add("2017-10-13");
+        list001.add("2017-11-13");
+        list001.add("2017-12-13");
+        list001.add("2017-11-13");
+        list001.add("2017-11-03");
+        list001.add("2017-11-13");
+        System.out.println(list001);
+        System.out.println("===========================");
+//        List<String> list002 = (List<String>)list001.clone();
+        List<String> list002 = list001;
+        List<String> list003 = list002;
+        list001 = new ArrayList<>();
+        System.out.println(list001);
+        System.out.println(list002);
+        System.out.println(list003);
+    }
+
+    @Test
+    void testRemove() {
+        List<String> list001 = new ArrayList<>();
+        list001.add("2017-11-11");
+        list001.add("2017-11-12");
+        list001.add("2017-11-13");
+        list001.add("2017-11-14");
+        list001.add("2017-11-15");
+        list001.add("2017-11-16");
+        list001.add("2017-11-17");
+        list001.add("2017-11-18");
+        list001.add("2017-11-19");
+        list001.add("2017-11-20");
+        list001.forEach(a -> System.out.println("==> " + a));
+        System.out.println("==" + list001.size());
+        System.out.println("=============================");
+        list001.remove("2017-11-14");
+        list001.forEach(a -> {
+            if ("2017-11-11".equals(a)) {
+                list001.set(list001.indexOf(a), "2018-11-11");
+            }
+        });
+        list001.forEach(a -> System.out.println("==> " + a));
+        System.out.println("==" + list001.size());
     }
 }
