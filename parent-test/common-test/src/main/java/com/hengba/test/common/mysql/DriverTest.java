@@ -11,6 +11,8 @@
  */
 package com.hengba.test.common.mysql;
 
+import org.junit.jupiter.api.Test;
+
 import java.sql.*;
 
 /**
@@ -49,6 +51,17 @@ public class DriverTest {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+    }
+
+    @Test
+    void mycatTest() throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection connection = DriverManager.getConnection("jdbc:mysql://192.168.136.78:33061/sportdata_transfermarkt", "root", "admin");
+        ResultSet resultSet = connection.createStatement().executeQuery("select name, birth_date from p_coach_base_info limit 1");
+        if (resultSet.next()){
+            System.out.println(resultSet.getString(1));
+            System.out.println(resultSet.getString(2));
         }
     }
 }
