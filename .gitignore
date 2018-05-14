@@ -4,6 +4,7 @@
 *.iml
 # ignore .idea file
 .idea/
+target
 
 parent-utils/utils-common/target/
 #parent-utils/utils-common/target/*

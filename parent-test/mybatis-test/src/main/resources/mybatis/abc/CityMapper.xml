@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.abc.dao.CityDao">	
+	<sql id="insertFields">
+        <if test="id != null and '' != id">
+			id,
+		</if>
+        <if test="playerId != null and '' != playerId">
+			player_id,
+		</if>
+        <if test="snapshotKey != null and '' != snapshotKey">
+			snapshot_key,
+		</if>
+        <if test="snapshotContent != null and '' != snapshotContent">
+			snapshot_content,
+		</if>
+        <if test="snapBeginTime != null and '' != snapBeginTime">
+			snap_begin_time,
+		</if>
+        <if test="snapEndTime != null and '' != snapEndTime">
+			snap_end_time,
+		</if>
+        <if test="source != null and '' != source">
+			source,
+		</if>
+        <if test="signature != null and '' != signature">
+			signature,
+		</if>
+        <if test="enableState != null and '' != enableState">
+			enable_state,
+		</if>
+        <if test="operateState != null and '' != operateState">
+			operate_state,
+		</if>
+        <if test="operateTime != null and '' != operateTime">
+			operate_time,
+		</if>
+			update_time,
+			create_time
+    </sql>
+    <sql id="valueFields">
+        <if test="id != null and '' != id">
+			#{id},
+        </if>
+        <if test="playerId != null and '' != playerId">
+			#{playerId},
+        </if>
+        <if test="snapshotKey != null and '' != snapshotKey">
+			#{snapshotKey},
+        </if>
+        <if test="snapshotContent != null and '' != snapshotContent">
+			#{snapshotContent},
+        </if>
+        <if test="snapBeginTime != null and '' != snapBeginTime">
+			#{snapBeginTime},
+        </if>
+        <if test="snapEndTime != null and '' != snapEndTime">
+			#{snapEndTime},
+        </if>
+        <if test="source != null and '' != source">
+			#{source},
+        </if>
+        <if test="signature != null and '' != signature">
+			#{signature},
+        </if>
+        <if test="enableState != null and '' != enableState">
+			#{enableState},
+        </if>
+        <if test="operateState != null and '' != operateState">
+			#{operateState},
+        </if>
+        <if test="operateTime != null and '' != operateTime">
+			#{operateTime},
+        </if>
+            sysdate(),
+            sysdate()
+    </sql>
+    <sql id="updateFields">
+        <if test="playerId != null and '' != playerId">
+			player_id = #{playerId},
+        </if>
+        <if test="snapshotKey != null and '' != snapshotKey">
+			snapshot_key = #{snapshotKey},
+        </if>
+        <if test="snapshotContent != null and '' != snapshotContent">
+			snapshot_content = #{snapshotContent},
+        </if>
+        <if test="snapBeginTime != null and '' != snapBeginTime">
+			snap_begin_time = #{snapBeginTime},
+        </if>
+        <if test="snapEndTime != null and '' != snapEndTime">
+			snap_end_time = #{snapEndTime},
+        </if>
+        <if test="source != null and '' != source">
+			source = #{source},
+        <if test="signature != null and '' != signature">
+        </if>
+			signature = #{signature},
+        </if>
+        <if test="enableState != null and '' != enableState">
+			enable_state = #{enableState},
+        </if>
+        <if test="operateState != null and '' != operateState">
+			operate_state = #{operateState},
+        </if>
+        <if test="operateTime != null and '' != operateTime">
+			operate_time = #{operateTime},
+        </if>
+			update_time = sysdate(),
+    </sql>
+
+</mapper>    
