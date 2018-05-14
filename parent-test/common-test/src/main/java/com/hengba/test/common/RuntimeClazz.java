@@ -38,6 +38,6 @@ public class RuntimeClazz {
         System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2017-10-21 00:00:00").getTime());
         System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2017-10-22 00:00:00").getTime());
 
-        System.out.println(new Date().getTime());
+        System.out.println(System.currentTimeMillis());
     }
 }

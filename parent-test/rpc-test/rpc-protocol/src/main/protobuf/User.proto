@@ -1,0 +1,16 @@
+package exec.proto;
+
+option java_package="com.hengba.rpc.protocol";
+option java_outer_classname="UserProtos";
+option optimize_for=SPEED;
+
+message Langage{
+    optional string name=1;
+    repeated string content=2;
+}
+
+
+message User{
+    optional string name=1;
+    optional Langage message=2;
+}

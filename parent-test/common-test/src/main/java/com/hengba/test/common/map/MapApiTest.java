@@ -6,6 +6,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -81,5 +82,25 @@ public class MapApiTest {
         public void setA(int a) {
             this.a = a;
         }
+    }
+
+    @Test
+    void testKeySetAdd(){
+        Map<String, Integer> map = new HashMap<>();
+//        map.keySet().addAll(Arrays.asList("123","234"));
+        map.put("123", 123);
+        map.put("234", 234);
+//        map.keySet().addAll(Arrays.asList("1123","1234"));
+        map.keySet().add("1123");
+        System.out.println("aaaaa");
+    }
+
+    @Test
+    void testNull() {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("123", 123);
+        map.put("234", 234);
+        map.put("222", null);
+        map.putAll(null);
     }
 }

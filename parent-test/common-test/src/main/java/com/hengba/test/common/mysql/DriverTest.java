@@ -41,7 +41,7 @@ public class DriverTest {
             System.out.printf(""+resultSetMetaData);
             while(rs.next()){
 //                System.out.println("uid: "+rs.getInt("uid"));
-//                System.out.println("name: "+rs.getString("name"));
+//                System.out.println("name: "+rs.getString("name"));x1
 //                System.out.println("phone: "+rs.getString("phone")+"\r\n");
                 System.out.println("uid: "+rs.getInt("A"));
                 System.out.println("name: "+rs.getString("B"));

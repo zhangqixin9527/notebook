@@ -13,6 +13,7 @@ package com.hengba.test.common;
 
 import commons.io.bytes.BytesIO;
 import commons.io.bytes.impl.BytesWritableIO;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
@@ -28,5 +29,16 @@ public class ByteIOTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    void byteDefault(){
+        A cc = new A();
+        System.out.println("a == b: "+ (cc.a == cc.b) + " , a = ? :"+ cc.a);
+    }
+
+    class  A {
+        byte a;
+        byte b = 0;
     }
 }
